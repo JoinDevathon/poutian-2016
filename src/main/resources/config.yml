@@ -1,1 +1,6 @@
+#please use lowercase for all item names
+
 machine: furnace
+deconstruct:
+  gravel:
+    flint: 2

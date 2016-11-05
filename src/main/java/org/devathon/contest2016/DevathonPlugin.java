@@ -27,6 +27,7 @@ public class DevathonPlugin extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new BlockBreakListener(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerInteractListener(this), this);
         Bukkit.getServer().getPluginManager().registerEvents(new BlockPlaceListener(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new InventoryCloseListener(this), this);
         this.getCommand("deconstruct").setExecutor(new DeconstructCommand(this));
     }
 
