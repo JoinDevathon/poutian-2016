@@ -1,7 +1,7 @@
-name: Devathon Project
-description: A project for the Devathon contest
-version: 1.0.0
-author: Your Name Here
+name: Deconstruction Machine
+description: Deconstruction plugin made for the devathon contest
+version: 1.0
+author: PoutIan
 
 main: org.devathon.contest2016.DevathonPlugin
 
