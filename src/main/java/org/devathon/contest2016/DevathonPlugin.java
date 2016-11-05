@@ -6,12 +6,12 @@ public class DevathonPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
+        //nothing important
     }
 
     @Override
     public void onDisable() {
-        
+
     }
 }
 
