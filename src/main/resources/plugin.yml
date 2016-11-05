@@ -1,7 +1,14 @@
-name: Deconstruction Machine
+name: DeconstructionMachine
 description: Deconstruction plugin made for the devathon contest
 version: 1.0
 author: PoutIan
 
 main: org.devathon.contest2016.DevathonPlugin
+
+commands:
+  deconstruct:
+    description: Main command for deconstruction
+    aliases: [dc, deconstruction, deconst]
+
+
 
