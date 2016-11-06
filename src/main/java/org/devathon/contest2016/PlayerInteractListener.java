@@ -20,6 +20,9 @@ public class PlayerInteractListener implements Listener {
 
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
+        if(event.isBlockInHand()) {
+            return;
+        }
         if(event.getClickedBlock().getType().toString().equalsIgnoreCase(machineblk) && event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
             Inventory deconInv = Bukkit.createInventory(null, 9, "Deconstruction");
             Player p = event.getPlayer();

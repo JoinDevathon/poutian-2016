@@ -3,6 +3,7 @@ package org.devathon.contest2016;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -28,6 +29,7 @@ public class DevathonPlugin extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerInteractListener(this), this);
         Bukkit.getServer().getPluginManager().registerEvents(new BlockPlaceListener(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new InventoryCloseListener(this), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new JoinListener(), this);
         this.getCommand("deconstruct").setExecutor(new DeconstructCommand(this));
     }
 

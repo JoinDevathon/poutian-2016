@@ -1,6 +1,8 @@
 #please use lowercase for all item names
 
-machine: furnace
+machine: iron_block
 deconstruct:
   gravel:
     flint: 2
+  dirt:
+    grass: 1
